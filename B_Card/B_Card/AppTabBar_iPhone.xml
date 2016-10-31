@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="AppTabBar_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+      <view class="bg"/>
+      <row class="container">
+          <col class="sub_container">
+              <image class="card_img public_img" id="card_img"/>
+              <label class="card public_text" id="card">@{tabbar_card}</label>
+              <button id="card_btn" class="mask"/>
+          </col>
+          <col class="sub_container">
+              <image class="msg_img public_img" id="msg_img"/>
+              <label class="msg public_text" id="msg">@{tabbar_msg}</label>
+              <button id="msg_btn" class="mask"/>
+          </col>
+          <col class="sub_container">
+              <image class="camera_img " id="camera_img"/>
+              <button id="camera_btn" class="mask"/>
+          </col>
+          <col class="sub_container">
+              <image class="search_img public_img" id="search_img"/>
+              <label class="search public_text" id="search">@{tabbar_search}</label>
+              <button id="search_btn" class="mask"/>
+          </col>
+          <col class="sub_container">
+              <image class="me_img public_img" id="me_img"/>
+              <label class="me public_text" id="me">@{tabbar_me}</label>
+              <button id="me_btn" class="mask"/>
+          </col>
+      </row>
+  </col>
+  
+  <style type="text/css">
+      .wrapper {
+      width: 100%;
+      height: 100%;
+      }
+      
+      .bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      }
+      
+      .container{
+      width: 100%;
+      height: 100%;
+      }
+      
+      .sub_container{
+      width: 20%;
+      height: 100%;
+      }
+
+      .mask {
+      width:100%;
+      height: 100%;
+      position: absolute;
+      }
+      
+      .public_text{
+      top:5px;
+      font-size:10px;
+      width:auto;
+      height:auto;
+      color:#777777;
+      float:center;
+      }
+      
+      .public_img{
+      width: 30px;
+      height: 30px;
+      background-color: blue;
+      float: center;
+      top:10px;
+      }
+      
+      </style>
+  </ui>

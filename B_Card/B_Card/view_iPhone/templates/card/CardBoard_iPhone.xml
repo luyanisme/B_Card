@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="CardBoard_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+    <!-- add your UI elements here -->
+    <row class="header_container">
+        <view class="bg"/>
+        <row class="sub_container">
+            <row class="search_container">
+                <image class="search_bg"/>
+                <image class="seatch_icon"/>
+                <input class="search_input" id="search_input" placeholder="@{search_placeholder}"/>
+            </row>
+            <row class="fun_container">
+                <image class="fun_img"/>
+                <button class="mask" id="more_fun"/>
+            </row>
+        </row>
+    </row>
+    <list id="list" class="list"/>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sub_container{
+    width:100%;
+    height: 44px;
+    v-float:bottom;
+    }
+    
+    .search_container{
+    width:80%;
+    height: 70%;
+    left: 10px;
+    v-float:center;
+    }
+    
+    .search_bg{
+    width: 100%;
+    height: 100%;
+    background-color:#f3f3f3;
+    position: absolute;
+    alpha:0.3;
+    border-radius:5px;
+    }
+    
+    .seatch_icon{
+    width: 25px;
+    height: 25px;
+    left: 10px;
+    background-color:red;
+    v-float:center;
+    }
+    
+    .search_input{
+    width:70%;
+    height: 95%;
+    v-float:center;
+    left: 5px;
+    font-size: 15px;
+    }
+    
+    .fun_container{
+    width: 20%;
+    height: 70%;
+    v-float:center;
+    }
+    
+    .fun_img{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    float: center;
+    }
+    
+    .header_container{
+    width: 100%;
+    height: 64px;
+    }
+    
+    .bg{
+    width: 100%;
+    height: 100%;
+    background-color:#4385F4;
+    position: absolute;
+    }
+    
+    .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
+  </style>
+</ui>

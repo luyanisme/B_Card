@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui namespace="CardAddCell_iPhone">
+  <!--
+    <row></row>
+  -->
+  <col class="wrapper">
+      <view class="bg"/>
+    <row class="container">
+        <image class="connection_icon"/>
+        <label class="add_connection_text public_text">@{add_connection}</label>
+        <button class="mask" id="add_connection"/>
+    </row>
+    <image class="h_line"/>
+    <row class="container">
+        <image class="group_icon"/>
+        <label class="group_text public_text">@{card_group}</label>
+        <button class="mask" id="card_group"/>
+    </row>
+  </col>
+   
+  <style type="text/css">
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container{
+    width:100%;
+    height: 50%;
+    }
+    
+    .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    }
+    
+    .mask {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    }
+    
+    .h_line{
+    width: 80%;
+    height: 1px;
+    background-color:#F5F5F5;
+    float:center;
+    }
+    
+    .connection_icon{
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    v-float:center;
+    background-color:#F5F5F5;
+    }
+    
+    .group_icon{
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    v-float:center;
+    background-color:#F5F5F5;
+    }
+    
+    .public_text{
+    width: auto;
+    height: auto;
+    left: 10px;
+    font-size: 18px;
+    v-float:center;
+    }
+  </style>
+</ui>
